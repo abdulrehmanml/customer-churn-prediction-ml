@@ -954,20 +954,31 @@ if submitted:
         unsafe_allow_html=True,
     )
 
-    # Automatically smooth-scroll down to the results dashboard with a slight delay
+    # Automatically smooth-scroll down to the results dashboard (Robust version)
     components.html(
         """
         <script>
             setTimeout(function() {
-                const target = window.parent.document.querySelector('.result-section');
+                const parentDoc = window.parent.document;
+                const target = parentDoc.querySelector('.result-section');
+                
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Force the parent html element to allow smooth scrolling
+                    parentDoc.documentElement.style.scrollBehavior = 'smooth';
+                    
+                    // Calculate exact pixel position (minus 50px for some breathing room at the top)
+                    const targetPosition = target.getBoundingClientRect().top + window.parent.scrollY - 50;
+                    
+                    // Execute the smooth scroll
+                    window.parent.scrollTo({top: targetPosition, behavior: 'smooth'
+                    });
                 }
-            }, 150); // 150ms delay ensures the DOM is fully rendered first
+            }, 300);
         </script>
         """,
         height=0
     )
+
 
 # =========================================================
 # FOOTER
