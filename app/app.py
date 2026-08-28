@@ -328,6 +328,12 @@ st.markdown(
     div[data-testid="stSelectbox"] div[role="combobox"]:focus-within,
     div[data-testid="stNumberInput"] div[data-baseweb="input"]:focus-within,
     div[data-testid="stNumberInput"] div[data-baseweb="baseInput"]:focus-within {
+        border-color: #55a9e8 !important;
+        box-shadow: 
+            0 0 0 1px #55a9e8, 
+            0 6px 18px rgba(0,0,0,0.15) !important;
+        outline: none !important;
+    }
 
     /* =====================================================
        DIVIDER
@@ -380,7 +386,7 @@ st.markdown(
        ACTION BUTTONS (SUBMIT & RESET)
        ===================================================== */
 
-    button[kind="primary"] {
+    button[data-testid="baseButton-primary"] {
         width: 100%;
         min-height: 3.15rem;
         background: linear-gradient(90deg, #2f7fba, #438fc8) !important;
@@ -393,14 +399,14 @@ st.markdown(
         transition: all 0.3s ease !important;
     }
 
-    button[kind="primary"]:hover {
+    button[data-testid="baseButton-primary"]:hover {
         background: linear-gradient(90deg, #28a745, #34ce57) !important;
         color: #ffffff !important;
         transform: translateY(-3px) !important;
         box-shadow: 0 14px 26px rgba(40,167,69,0.25) !important;
     }
 
-    button[kind="secondary"] {
+    button[data-testid="baseButton-secondary"] {
         width: 100%;
         min-height: 3.15rem;
         background: #202b35 !important;
@@ -412,7 +418,7 @@ st.markdown(
         transition: all 0.3s ease !important;
     }
 
-    button[kind="secondary"]:hover {
+    button[data-testid="baseButton-secondary"]:hover {
         background: #293640 !important;
         color: #ffffff !important;
         border-color: #536677 !important;
