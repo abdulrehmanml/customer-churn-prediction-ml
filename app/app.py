@@ -168,8 +168,10 @@ st.markdown(
        SELECTBOX
        ===================================================== */
 
-    div[data-baseweb="select"] > div {
-        background: #202b35 !important;
+    div[data-baseweb="select"],
+    div[data-baseweb="select"] > div,
+    div[data-testid="stSelectbox"] div[role="combobox"] {
+        background-color: #202b35 !important;
         border: 1px solid #3d4e5d !important;
         border-radius: 10px !important;
         height: 48px !important;
@@ -205,9 +207,10 @@ st.markdown(
         min-height: 48px !important;
     }
 
-    /* 1. Target the MAIN WRAPPER (kills native red borders and sets base gray) */
-    div[data-testid="stNumberInput"] > div[data-baseweb="input"] {
-        background: #202b35 !important;
+    /* 1. Target the MAIN WRAPPER */
+    div[data-testid="stNumberInput"] div[data-baseweb="input"],
+    div[data-testid="stNumberInput"] div[data-baseweb="baseInput"] {
+        background-color: #202b35 !important;
         border: 1px solid #3d4e5d !important;
         border-radius: 10px !important;
         box-shadow: 0 5px 14px rgba(0,0,0,0.12) !important;
@@ -320,15 +323,11 @@ st.markdown(
        INPUT FOCUS
        ===================================================== */
 
-    /* 3. Apply blue border directly to wrappers, overriding Streamlit's native dirty state */
-    div[data-baseweb="select"]:focus-within > div,
-    div[data-testid="stNumberInput"] > div[data-baseweb="input"]:focus-within {
-        border-color: #55a9e8 !important;
-        box-shadow: 
-            0 0 0 1px #55a9e8, 
-            0 6px 18px rgba(0,0,0,0.15) !important;
-        outline: none !important;
-    }
+    /* 3. Apply blue border directly to wrappers */
+    div[data-baseweb="select"]:focus-within,
+    div[data-testid="stSelectbox"] div[role="combobox"]:focus-within,
+    div[data-testid="stNumberInput"] div[data-baseweb="input"]:focus-within,
+    div[data-testid="stNumberInput"] div[data-baseweb="baseInput"]:focus-within {
 
     /* =====================================================
        DIVIDER
