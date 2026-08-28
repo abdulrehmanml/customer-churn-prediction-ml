@@ -1,5 +1,6 @@
 [theme]
 base="dark"
+primaryColor="#55a9e8"
 backgroundColor="#11161c"
 secondaryBackgroundColor="#202b35"
 textColor="#f5f7fa"
