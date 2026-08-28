@@ -1,9 +1,9 @@
 # Customer Churn Prediction 📊
 
 <p align="center">
-  <a href="YOUR_STREAMLIT_APP_URL">🌐 Live Streamlit App</a>
+  <a href="https://customer-churn-prediction-engine.streamlit.app/">🌐 Live Streamlit App</a>
   &nbsp;•&nbsp;
-  <a href="YOUR_GITHUB_REPOSITORY_URL">🐙 GitHub Repository</a>
+  <a href="https://github.com/abdulrehmanml/customer-churn-prediction-ml/">🐙 GitHub Repository</a>
 </p>
 <p align="center">
   <a href="YOUR_DEMO_VIDEO_URL">🎥 Project Demo Video</a>
@@ -23,7 +23,7 @@ Telecom companies need to proactively identify customers who may be at risk of l
 * **Build an intuitive frontend application** that accepts raw customer inputs and provides contextual risk evaluations.
 
 ## 4. Dataset
-The project utilizes the [IBM Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (`Telco-Customer-Churn.csv`).
+The project utilizes the [IBM Telco Customer Churn Dataset](https://github.com/IBM/telco-customer-churn-on-icp4d/blob/master/data/Telco-Customer-Churn.csv) (`Telco-Customer-Churn.csv`).
 * The **Cleaned Data:** is stored in `data/processed/cleaned_customer_churn.csv`
 
 The dataset contains anonymized customer profiles, detailing their demographic information, current service subscriptions, contract types, and historical billing/payment configurations alongside their final churn status.
@@ -219,11 +219,11 @@ While outside the current scope of this project, future enhancements for an ente
 **ABDUL REHMAN**
 
 <p align="left">
-  <a href="[https://linkedin.com/in/YOUR-PROFILE](https://linkedin.com/in/YOUR-PROFILE)" target="_blank">
+  <a href="[https://linkedin.com/in/YOUR-PROFILE](https://linkedin.com/in/abdul-rehmanmughal)" target="_blank">
     <img src="[https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
-  <a href="[https://github.com/YOUR-USERNAME](https://github.com/YOUR-USERNAME)" target="_blank">
+  <a href="[https://github.com/YOUR-USERNAME](https://github.com/abdulrehmanml)" target="_blank">
     <img src="[https://img.shields.io/badge/GitHub-Explore%20my%20projects-181717?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-Explore%20my%20projects-181717?style=for-the-badge&logo=github&logoColor=white)" alt="GitHub" />
   </a>
 </p>
