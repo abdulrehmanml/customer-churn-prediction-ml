@@ -116,13 +116,13 @@ The project features a custom-built interactive frontend leveraging **Streamlit*
 ### Application Interface
 
 **1. Customer Profile Input**
-![Customer Profile Input](visuals/01_streamlit_application.jpg)
+![Customer Profile Input](visuals/01_streamlit_application.png)
 
 **2. Services & Payment Setup**
-![Services and Payment](visuals/02_streamlit_application.jpg)
+![Services and Payment](visuals/02_streamlit_application.png)
 
 **3. Prediction Results Dashboard**
-![Prediction Results](visuals/03_streamlit_application.jpg)
+![Prediction Results](visuals/03_streamlit_application.png)
 
 *Figure 7: The interactive customer churn prediction interface (Top to Bottom).*
 
