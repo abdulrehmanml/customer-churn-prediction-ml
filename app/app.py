@@ -953,13 +953,17 @@ if submitted:
         """,
         unsafe_allow_html=True,
     )
-    
-    # Automatically smooth-scroll down to the results dashboard
+
+    # Automatically smooth-scroll down to the results dashboard with a slight delay
     components.html(
         """
         <script>
-            // Tell the parent browser window to scroll to the results
-            window.parent.document.querySelector('.result-section').scrollIntoView({behavior: 'smooth'});
+            setTimeout(function() {
+                const target = window.parent.document.querySelector('.result-section');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 150); // 150ms delay ensures the DOM is fully rendered first
         </script>
         """,
         height=0
