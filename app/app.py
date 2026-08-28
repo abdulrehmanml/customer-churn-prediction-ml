@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 import streamlit as st
+import streamlit.components.v1 as components
 
 # =========================================================
 # PAGE CONFIGURATION (Must be the first st. command)
@@ -399,8 +400,9 @@ st.markdown(
         transition: all 0.3s ease !important;
     }
 
+    div[data-testid="stButton"] button[kind="primary"]:hover,
     button[data-testid="baseButton-primary"]:hover {
-        background: linear-gradient(90deg, #22c55e, #16a34a) !important; /* Vibrant UI Green */
+        background: linear-gradient(90deg, #22c55e, #16a34a) !important;
         color: #ffffff !important;
         border-color: transparent !important;
         transform: translateY(-2px) !important;
@@ -950,6 +952,17 @@ if submitted:
             </div>
         """,
         unsafe_allow_html=True,
+    )
+    
+    # Automatically smooth-scroll down to the results dashboard
+    components.html(
+        """
+        <script>
+            // Tell the parent browser window to scroll to the results
+            window.parent.document.querySelector('.result-section').scrollIntoView({behavior: 'smooth'});
+        </script>
+        """,
+        height=0
     )
 
 # =========================================================
