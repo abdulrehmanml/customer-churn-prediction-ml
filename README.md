@@ -6,7 +6,7 @@
   <a href="https://github.com/abdulrehmanml/customer-churn-prediction-ml/">🐙 GitHub Repository</a>
 </p>
 <p align="center">
-  <a href="YOUR_DEMO_VIDEO_URL">🎥 Project Demo Video</a>
+  <a href="visuals/demo.gif">🎥 Project Demo Video</a>
 </p>
 
 ---
@@ -113,9 +113,18 @@ The project features a custom-built interactive frontend leveraging **Streamlit*
 * Dynamic business interpretation based on risk tier
 * Complete form reset functionality
 
-![Streamlit Application](visuals/streamlit_application.png) 
+### Application Interface
 
-*Figure 7: The interactive customer churn prediction interface.*
+**1. Customer Profile Input**
+![Customer Profile Input](visuals/01_streamlit_application.jpg)
+
+**2. Services & Payment Setup**
+![Services and Payment](visuals/02_streamlit_application.jpg)
+
+**3. Prediction Results Dashboard**
+![Prediction Results](visuals/03_streamlit_application.jpg)
+
+*Figure 7: The interactive customer churn prediction interface (Top to Bottom).*
 
 ## 15. Project Structure
 ```text
