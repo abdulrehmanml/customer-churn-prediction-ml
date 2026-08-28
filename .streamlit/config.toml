@@ -1,1 +1,5 @@
-
+[theme]
+base="dark"
+backgroundColor="#11161c"
+secondaryBackgroundColor="#202b35"
+textColor="#f5f7fa"
