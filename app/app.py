@@ -400,10 +400,11 @@ st.markdown(
     }
 
     button[data-testid="baseButton-primary"]:hover {
-        background: linear-gradient(90deg, #28a745, #34ce57) !important;
+        background: linear-gradient(90deg, #22c55e, #16a34a) !important; /* Vibrant UI Green */
         color: #ffffff !important;
-        transform: translateY(-3px) !important;
-        box-shadow: 0 14px 26px rgba(40,167,69,0.25) !important;
+        border-color: transparent !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 10px 22px rgba(34, 197, 94, 0.25) !important;
     }
 
     button[data-testid="baseButton-secondary"] {
@@ -459,16 +460,21 @@ st.markdown(
 
     .result-card {
         min-height: 155px;
-        background:
-            linear-gradient(
-                145deg,
-                rgba(255,255,255,0.08),
-                rgba(255,255,255,0.035)
-            );
-        border: 1px solid rgba(255,255,255,0.10);
-        border-radius: 16px;
-        padding: 1.15rem;
-        box-shadow: 0 12px 28px rgba(0,0,0,0.20);
+        /* Richer, deeper blue-grey background to increase text contrast */
+        background: linear-gradient(145deg, rgba(32, 43, 53, 0.85), rgba(17, 22, 28, 0.95));
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-top: 3px solid #55a9e8; /* Strong theme accent line */
+        border-radius: 14px;
+        padding: 1.25rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    /* Adds a premium subtle lift and glow when the user hovers over the cards */
+    .result-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 30px rgba(85, 169, 232, 0.12);
+        border-top: 3px solid #6cbcf5; /* Slightly brighter blue on hover */
     }
 
     .result-label {
