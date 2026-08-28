@@ -1,0 +1,12 @@
+# Web Framework
+streamlit
+
+# Data Manipulation
+pandas
+
+# Machine Learning & Serialization
+scikit-learn
+joblib
+
+# Development / Notebooks (Optional for deployment)
+jupyter
