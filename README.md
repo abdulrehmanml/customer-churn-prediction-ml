@@ -219,11 +219,11 @@ While outside the current scope of this project, future enhancements for an ente
 **ABDUL REHMAN**
 
 <p align="left">
-  <a href="[https://linkedin.com/in/YOUR-PROFILE](https://linkedin.com/in/abdul-rehmanmughal)" target="_blank">
+  <a href="https://linkedin.com/in/abdul-rehmanmughal" target="_blank">
     <img src="[https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white](https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
-  <a href="[https://github.com/YOUR-USERNAME](https://github.com/abdulrehmanml)" target="_blank">
+  <a href="https://github.com/abdulrehmanml" target="_blank">
     <img src="[https://img.shields.io/badge/GitHub-Explore%20my%20projects-181717?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-Explore%20my%20projects-181717?style=for-the-badge&logo=github&logoColor=white)" alt="GitHub" />
   </a>
 </p>
