@@ -1,7 +1,6 @@
 import sys
 from pathlib import Path
 import streamlit as st
-import streamlit.components.v1 as components
 
 # =========================================================
 # PAGE CONFIGURATION (Must be the first st. command)
@@ -841,6 +840,9 @@ if submitted:
     
     try:
         probability, prediction = predict_customer(customer_data, pipeline, prediction_threshold)
+
+        st.toast("Prediction generated! Scroll down to view results.", icon="📊")
+        
     except Exception as exc:
         st.error("The prediction could not be generated.")
         st.caption("Please verify the entered customer information and try again.")
@@ -952,31 +954,6 @@ if submitted:
             </div>
         """,
         unsafe_allow_html=True,
-    )
-
-    # Automatically smooth-scroll down to the results dashboard (Robust version)
-    components.html(
-        """
-        <script>
-            setTimeout(function() {
-                const parentDoc = window.parent.document;
-                const target = parentDoc.querySelector('.result-section');
-                
-                if (target) {
-                    // Force the parent html element to allow smooth scrolling
-                    parentDoc.documentElement.style.scrollBehavior = 'smooth';
-                    
-                    // Calculate exact pixel position (minus 50px for some breathing room at the top)
-                    const targetPosition = target.getBoundingClientRect().top + window.parent.scrollY - 50;
-                    
-                    // Execute the smooth scroll
-                    window.parent.scrollTo({top: targetPosition, behavior: 'smooth'
-                    });
-                }
-            }, 300);
-        </script>
-        """,
-        height=0
     )
 
 
